@@ -1,7 +1,7 @@
 # hotspot-fortrantest
 Simple program to test/showcase hotspot functionality when reading a `.data` file generated from a Fortran binary.
 
-The program in this example computes the matrix product of two variable-length pseudorandom matrices using a simple straightforward algorithm with different compiler optimizations (`-O`, `-O1`, `-O2`, `-O3`). Finally, error-checking is carried over comparing against the standard `MATMUL` intrinsic function.
+The program in this example computes the matrix product of two variable-length pseudorandom matrices using a simple straightforward algorithm with different compiler optimizations (`-O`, `-O1`, `-O2`, `-O3`). Finally, error-checking is carried out comparing against the standard `MATMUL` intrinsic function.
 
 ## Dependencies
 This test requires the following binaries
@@ -40,4 +40,4 @@ and rebooting. If you don't want to reboot, you may alternatively run
 ```
 echo 0 > /proc/sys/kernel/perf_event_paranoid
 ```
-however without a `.conf` file changes will be lost upon reboot.
+however, without a `.conf` file, changes will be lost upon reboot.
